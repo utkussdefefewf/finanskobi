@@ -1133,7 +1133,9 @@ def uzun_sil(clicks, veri):
     veri["uzun_vadeli"] = [u for u in veri.get("uzun_vadeli",[]) if u["id"] != sil_id]
     return veri
 
-# ── Çalıştır ──────────────────────────────────────────────────
+# ── Çalıştır ──────────────────────────────────────────────────────────────────
+
+server = app.server
 
 if __name__ == "__main__":
     print("=" * 55)
